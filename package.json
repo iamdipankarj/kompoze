@@ -98,9 +98,6 @@
       "last 1 safari version"
     ]
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "optionalDependencies": {
     "@biomejs/biome": "^1.9.4",
     "gh-pages": "^4.0.0",
