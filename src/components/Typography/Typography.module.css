@@ -1,0 +1,112 @@
+@import url('../../helpers/variables.css');
+
+.root {
+  margin: 0;
+}
+
+.h1 {
+  font-size: 64px;
+  line-height: 87px;
+  letter-spacing: -0.5px;
+}
+
+.h2 {
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: -0.5px;
+}
+
+.h3 {
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: 0.2px;
+}
+
+.h4 {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.h5 {
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.15px;
+}
+
+.h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
+
+.subtitle1 {
+  font-size: 16px;
+  letter-spacing: 0.15px;
+}
+
+.subtitle2 {
+  font-size: 14px;
+  letter-spacing: 0.15px;
+}
+
+.subtitle3 {
+  font-size: 13px;
+  letter-spacing: 0.13px;
+}
+
+.subtitle4 {
+  font-size: 12px;
+  letter-spacing: 0.12px;
+}
+
+.body1 {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.body2 {
+  font-size: 14px;
+  letter-spacing: 0.25px;
+}
+
+.button1 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.button2 {
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.caption1 {
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+
+.caption2 {
+  font-size: 12px;
+  letter-spacing: 0.17px;
+}
+
+.colorDefault {
+  color: inherit;
+}
+
+.colorPrimary {
+  color: var(--green-primary);
+}
+
+.colorSecondary {
+  color: var(--orange-light);
+}
+
+.gutterBottom {
+  margin-bottom: 0.32em !important;
+}
+
+.noWrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

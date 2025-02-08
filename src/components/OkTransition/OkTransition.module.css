@@ -1,0 +1,101 @@
+.leftEnter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.leftEnterActive {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.leftExit {
+  opacity: 1;
+}
+
+.leftExitActive {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.rightEnter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.rightEnterActive {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.rightExit {
+  opacity: 1;
+}
+
+.rightExitActive {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fadeEnter {
+  opacity: 0;
+}
+
+.fadeEnterActive {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fadeExit {
+  opacity: 1;
+}
+
+.fadeExitActive {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.fadeScaleEnter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.fadeScaleEnterActive {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fadeScaleExit {
+  opacity: 1;
+}
+
+.fadeScaleExitActive {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.bottomEnter {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.bottomEnterActive {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.bottomExit {
+  opacity: 1;
+}
+
+.bottomExitActive {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 300ms, transform 300ms;
+}

@@ -1,0 +1,64 @@
+@import url('../../helpers/variables.css');
+
+.icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border: 2px solid #bdbdbd;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--green-primary);
+  transition: all 0.2s ease;
+  transform: scale(0);
+}
+
+.label {
+  position: relative;
+  display: inline-flex;
+  font-size: inherit;
+}
+
+.hasPointer {
+  cursor: pointer;
+}
+
+.children {
+  line-height: 1;
+}
+
+.root {
+  display: inline-flex;
+  position: relative;
+}
+
+.input {
+  margin: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.input:checked + .label > .icon {
+  border-color: var(--green-primary);
+}
+
+.input:checked + .label > .icon::before {
+  transform: scale(1);
+}
+

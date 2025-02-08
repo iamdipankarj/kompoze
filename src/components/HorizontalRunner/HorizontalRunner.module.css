@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.iconContainer {
+  margin: 0px 10px;
+}

@@ -1,0 +1,89 @@
+@import url('../../helpers/variables.css');
+
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+  position: relative;
+  min-width: 142px;
+}
+
+.wrapper {
+  display: inherit;
+  width: 100%;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--gray-secondary);
+}
+
+.wrapperError {
+  border-color: var(--red-dark);
+}
+
+.icon {
+  font-size: 20px;
+  color: var(--red-dark);
+  flex-grow: 0;
+}
+
+.inputWrapper {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+}
+
+.container {
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.proxy {
+  font-weight: 500;
+  font-size: 40px;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 30px;
+  display: block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.input {
+  font-weight: 500;
+  font-size: 40px;
+  flex-grow: 1;
+  color: #424242;
+  font-family: inherit;
+  text-align: center;
+  display: block;
+  outline: none;
+  border: 0;
+  height: 40px;
+  padding: 0;
+  width: 100%;
+  appearance: textfield;
+}
+
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+.helper {
+  font-size: 12px;
+  padding-top: 3px;
+  letter-spacing: 0.25px;
+  display: block;
+  color: var(--green-primary);
+  white-space: normal;
+}
+
+.helperError {
+  color: var(--red-dark);
+}

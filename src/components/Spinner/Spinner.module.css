@@ -1,0 +1,42 @@
+@keyframes circularRotate {
+  0% {
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circularDash {
+  0% {
+    stroke-dasharray: 1px, 200px;
+    stroke-dashoffset: 0px;
+  }
+  50% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -15px;
+  }
+  100% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -125px;
+  }
+}
+
+.root {
+  display: inline-flex;
+  animation-name: circularRotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.svg {
+  display: block;
+}
+
+.circle {
+  animation-name: circularDash;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  stroke-dasharray: 80px, 200px;
+  stroke-dashoffset: 0;
+}

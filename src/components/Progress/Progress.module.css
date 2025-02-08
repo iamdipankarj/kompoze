@@ -1,0 +1,59 @@
+@import url('../../helpers/variables.css');
+
+@keyframes indeterminate1 {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@keyframes indeterminate2 {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+.root {
+  height: 3px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--green-lite);
+}
+
+.bar {
+  top: 0;
+  left: 0;
+  width: auto;
+  bottom: 0;
+  position: absolute;
+  transition-property: width;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transform-origin: left;
+  background-color: var(--green-primary);
+}
+
+.bar1 {
+  animation: indeterminate1 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+
+.bar2 {
+  animation: indeterminate2 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite;
+}

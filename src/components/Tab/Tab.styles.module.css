@@ -1,0 +1,22 @@
+@import url('../../helpers/variables.css');
+
+.root {
+  background-color: #fff;
+  padding: 12px;
+  border: 0;
+  outline: 0;
+  user-select: none;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: normal;
+  text-align: center;
+  font-weight: 600;
+  color: #757575;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.root.active {
+  color: var(--green-primary);
+}

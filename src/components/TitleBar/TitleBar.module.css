@@ -1,0 +1,43 @@
+@import url('../../helpers/variables.css');
+
+.root {
+  display: flex;
+  align-items: center;
+  padding: 2px 6px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.compact {
+  padding: 2px 10px;
+}
+
+.avatar {
+  display: inline-flex;
+  margin-right: 8px;
+}
+
+.container {
+  display: inline-flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.iconStart {
+  flex-shrink: 0;
+  margin-right: 2px;
+}
+
+.primary {
+  color: var(--text-black);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.secondary {
+  margin-top: 2px;
+  color: #616161;
+  font-size: 12px;
+}
+

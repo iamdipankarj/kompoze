@@ -1,0 +1,29 @@
+.root {
+  min-height: 48px;
+  background-color: #fff;
+  padding: 2px 4px;
+  align-items: center;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+.title {
+  font-weight: 600;
+  flex-grow: 1;
+  color: #757575;
+}
+
+.container {
+  padding: 4px 8px;
+  display: inline-flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.input {
+  border: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+}

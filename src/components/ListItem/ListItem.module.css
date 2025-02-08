@@ -1,0 +1,46 @@
+.root {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  padding: 0;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.icon {
+  display: inline-flex;
+  margin-right: 16px;
+}
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 12px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.content {
+  min-height: 24px;
+  flex-grow: 1;
+  display: inherit;
+  flex-direction: column;
+}
+
+.endAdornment {
+  display: inline-flex;
+}
+
+.primary {
+  font-size: 12px;
+  letter-spacing: 0.17px;
+}
+
+.secondary {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,12 @@
+.selected {
+  margin-bottom: 10px;
+}
+
+.root {
+  color: #616161;
+  display: flex;
+}
+
+.root > * {
+  margin: 0 10px;
+}

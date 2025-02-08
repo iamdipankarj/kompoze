@@ -1,0 +1,16 @@
+.root {
+  background-color: #ffa558;
+  border-radius: 50%;
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.img {
+  display: block;
+}

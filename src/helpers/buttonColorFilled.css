@@ -1,0 +1,102 @@
+@import url('./variables.css');
+
+.filled {
+  background-color: var(--gray-primary);
+  border-color: var(--gray-primary);
+  transition: 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.filled:hover {
+  background-color: var(--gray-active);
+  border-color: var(--gray-active);
+}
+
+.filled:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--gray-focus);
+}
+
+/* Filled with primary color */
+.filledPrimary {
+  background-color: var(--green-primary);
+  border-color: var(--green-primary);
+  color: #fff;
+}
+
+.filledPrimary:hover {
+  background-color: var(--green-secondary);
+  border-color: var(--green-secondary);
+}
+
+.filledPrimary:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--green-focus);
+}
+
+/* Filled with Bahama color */
+.filledBahama {
+  background-color: var(--bahama-primary);
+  border-color: var(--bahama-primary);
+  color: #fff;
+}
+
+.filledBahama:hover {
+  background-color: var(--bahama-secondary);
+  border-color: var(--bahama-secondary);
+}
+
+.filledBahama:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--bahama-secondary);
+}
+
+/* Filled with secondary color */
+.filledSecondary {
+  background-color: var(--red-primary);
+  border-color: var(--red-primary);
+  color: #fff;
+}
+
+.filledSecondary:hover {
+  background-color: var(--red-secondary);
+  border-color: var(--red-secondary);
+}
+
+.filledSecondary:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--red-focus);
+}
+
+/* Filled with grayscale */
+.filledGrayscale {
+  background-color: var(--gray-focus);
+  border-color: var(--gray-focus);
+  color: #fff;
+}
+
+.filledGrayscale:hover {
+  background-color: var(--gray-focus-active);
+  border-color: var(--gray-focus-active);
+}
+
+.filledGrayscale:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--red-focus);
+}
+
+/* Disabled filled */
+.filledDisabled {
+  background-color: var(--gray-secondary);
+  border-color: var(--gray-secondary);
+  cursor: default;
+  color: #fff;
+  pointer-events: none;
+}
+
+.filledDisabled:hover {
+  background-color: var(--gray-secondary);
+  border-color: var(--gray-secondary);
+}
+
+.filledDisabled:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--gray-disabled);
+}

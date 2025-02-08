@@ -1,0 +1,40 @@
+@import url('./variables.css');
+
+.text {
+  padding: 6px;
+  line-height: 1rem;
+  background-color: transparent;
+  border: 0;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.text:hover {
+  background-color: var(--gray-hover);
+  border-color: var(--gray-hover);
+}
+
+.text:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--gray-focus);
+}
+
+.textPrimary {
+  color: var(--green-primary);
+}
+
+.textSecondary {
+  color: var(--red-secondary);
+}
+
+.textBahama {
+  color: var(--bahama-primary);
+}
+
+.textGrayscale {
+  color: var(--text-black);
+}
+
+.textDisabled {
+  cursor: default;
+  color: var(--gray-disabled);
+  pointer-events: none;
+}

@@ -1,0 +1,8 @@
+@import url('../../helpers/variables.css');
+
+.root {
+  padding: 6px 16px 8px;
+  background-color: var(--green-super-lite);
+  font-size: 0.8rem;
+}
+

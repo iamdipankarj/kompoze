@@ -1,0 +1,14 @@
+# Ignore artifacts:
+build
+dist
+coverage
+.babelrc
+.git
+storybook-static
+stats.json
+.DS_Store
+.svn
+yarn.lock
+stats.json
+node_modules
+package-lock.json

@@ -1,0 +1,67 @@
+@import url('./variables.css');
+
+.outlined {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #bdbdbd;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.outlined:hover {
+  background-color: var(--gray-hover);
+}
+
+.outlined:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--gray-focus);
+}
+
+/* Outlined with primary color */
+.outlinedPrimary {
+  color: var(--green-primary);
+  border-color: var(--green-primary);
+}
+
+.outlinedPrimary:hover {
+  background-color: var(--green-lite);
+}
+
+/* Outlined with Bahama color */
+.outlinedBahama {
+  color: var(--bahama-primary);
+  border-color: var(--bahama-primary);
+}
+
+.outlinedBahama:hover {
+  background-color: var(--bahama-lite);
+}
+
+/* Outlined with secondary color */
+.outlinedSecondary {
+  color: var(--red-primary);
+  border-color: var(--red-primary);
+}
+
+.outlinedSecondary:hover {
+  background-color: var(--red-lite);
+}
+
+/* Outlined with grayscale */
+.outlinedGrayscale {
+  color: var(--text-black);
+  border-color: var(--gray-focus-active);
+}
+
+.outlinedGrayscale:hover {
+  background-color: var(--gray-lite);
+}
+
+/* Outlined disabled */
+.outlinedDisabled {
+  border-color: var(--gray-active);
+  cursor: default;
+  color: var(--gray-disabled);
+  pointer-events: none;
+}
+
+.outlinedDisabled svg {
+  fill: currentColor;
+}
