@@ -75,7 +75,6 @@ jobs:
         uses: actions/setup-node@v2.1.5
         with:
           node-version: '20.9.0'
-          registry-url: https://npm.pkg.github.com/
           scope: '@iamdipankarj'
 
       # Set bot user config
@@ -90,24 +89,6 @@ jobs:
         # Install Rollup
       - name: Install Rollup
         run: yarn global add rollup --ignore-scripts
-
-      # Update Package version
-      - name: Updating Package version
-        run: |
-          yarn version --${{ needs.setup.outputs.versionType }}
-          git push origin ${{ github.base_ref }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.DEPLOY_KEY }}
-
-      # Publish to Github Packages
-      - name: Publish Package
-        run: yarn publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.DEPLOY_KEY }}
-
-      - name: Get Package Version
-        id: package-version
-        uses: martinbeentjes/npm-get-version-action@master
 
       # Push the release
       - name: Release Package
