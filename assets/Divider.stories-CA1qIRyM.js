@@ -1,0 +1,3 @@
+import{j as a}from"./jsx-runtime-eps93zm2.js";import{c as p}from"./index-CiFSV9U-.js";import"./index-DhsZuJvc.js";const d="kze_root___IT-0I",m={root:d},e=o=>{const{className:c,...n}=o;return a.jsx("hr",{className:p(m.root,c),...n})};try{e.displayName="Divider",e.__docgenInfo={description:"",displayName:"Divider",props:{}}}catch{}const r=()=>a.jsx(e,{}),x={title:"Divider",component:e};var s,t,i;r.parameters={...r.parameters,docs:{...(s=r.parameters)==null?void 0:s.docs,source:{originalSource:`() => {
+  return <Divider />;
+}`,...(i=(t=r.parameters)==null?void 0:t.docs)==null?void 0:i.source}}};const v=["Simple"];export{r as Simple,v as __namedExportsOrder,x as default};

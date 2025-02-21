@@ -1,0 +1,22 @@
+<svg
+  width="220"
+  height="80"
+  viewBox="0 0 220 80"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <text
+    x="10"
+    y="55"
+    font-family="'Courier New', Courier, monospace"
+    font-size="38"
+    font-weight="bold"
+    fill="#0574E3"
+    letter-spacing="2"
+  >
+    kompoze
+  </text>
+  <rect x="180" y="10" width="12" height="12" fill="#E88C00" />
+  <rect x="195" y="30" width="10" height="10" fill="#1c873b" />
+  <rect x="165" y="30" width="10" height="10" fill="#ed4017" />
+</svg>

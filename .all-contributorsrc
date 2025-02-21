@@ -1,0 +1,33 @@
+{
+  "projectName": "kompoze",
+  "projectOwner": "iamdipankarj",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 64,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "iamdipankarj",
+      "name": "Dipankar Jana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77960995?v=4",
+      "profile": "https://github.com/iamdipankarj",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "exploit-v2",
+      "name": "Srimanta Ghosh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78195409?v=4",
+      "profile": "https://github.com/exploit-v2",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
