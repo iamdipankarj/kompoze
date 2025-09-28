@@ -19,7 +19,6 @@ jobs:
 
     outputs:
       versionType: ${{ steps.major.outputs.versionType || steps.minor.outputs.versionType || steps.patch.outputs.versionType }}
-      dir: ${{ steps.yarnCacheDir.outputs.dir }}
 
     steps:
       - name: Checkout App
@@ -30,15 +29,6 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org/'
-
-      - name: Check yarn dependencies in cache
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarnCacheDir.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
 
       # Major
       - name: Version setup - Major
