@@ -1,4 +1,4 @@
-import { create } from '@storybook/theming'
+import { create } from 'storybook/theming'
 import Logo from './public/kompoze-logo.svg'
 
 export default create({

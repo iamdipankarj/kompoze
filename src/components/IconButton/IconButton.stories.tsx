@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import type { Meta } from '@storybook/react'
+import type { Meta } from '@storybook/react-vite'
 import { IconButton } from './IconButton'
 import { InfoIcon } from '../Icon/InfoIcon'
 import { CheckBox } from '../CheckBox'

@@ -6,11 +6,7 @@ const config: StorybookConfig = {
     options: {}
   },
   staticDirs: ['./public'],
-  addons: [
-    '@storybook/addon-docs',
-    '@storybook/addon-links',
-    '@storybook/addon-essentials'
-  ],
+  addons: ['@storybook/addon-docs', '@storybook/addon-links'],
   features: {
     argTypeTargetsV7: true
   },
