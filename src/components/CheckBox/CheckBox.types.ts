@@ -1,9 +1,9 @@
-import type { IElementSize, OkElement } from '@/utils/utils.types'
+import type { KompozeElementSize, KompozeElement } from '@/utils/utils.types'
 
-export interface CheckBoxProps extends React.HTMLAttributes<HTMLDivElement>, OkElement {
+export interface CheckBoxProps extends React.HTMLAttributes<HTMLDivElement>, KompozeElement {
   onChange?(e: React.ChangeEvent<HTMLInputElement>): void
   id: string
-  area?: IElementSize
+  area?: KompozeElementSize
   disabled?: boolean
   checked?: boolean
   required?: boolean

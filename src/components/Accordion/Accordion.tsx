@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { useState, useEffect } from 'react'
 import cx from 'classnames'
 import type { AccordionProps } from './Accordion.types'
@@ -6,7 +6,7 @@ import { CaretRightIcon } from '@/components/Icon'
 import { themeColors } from '@/theme'
 import classes from './Accordion.module.css'
 
-export const Accordion: React.FC<AccordionProps> = props => {
+export const Accordion = forwardRef<HTMLDivElement, AccordionProps>((props, ref) => {
   const {
     expanded = false,
     children,
@@ -59,6 +59,7 @@ export const Accordion: React.FC<AccordionProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, root, className)}
       aria-expanded={expandedState}
       aria-label={label}
@@ -94,4 +95,4 @@ export const Accordion: React.FC<AccordionProps> = props => {
       ) : null}
     </div>
   )
-}
+})

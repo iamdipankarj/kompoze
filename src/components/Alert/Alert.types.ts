@@ -1,5 +1,5 @@
-import type { OkElement } from '../../utils/utils.types'
+import type { KompozeElement } from '@/utils/utils.types'
 
-export interface AlertProps extends React.HTMLAttributes<HTMLDivElement>, OkElement {
+export interface AlertProps extends React.HTMLAttributes<HTMLDivElement>, KompozeElement {
   variant?: 'success' | 'error'
 }

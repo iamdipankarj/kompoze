@@ -1,7 +1,7 @@
-import type { IShimmerType } from '../../utils/utils.types'
+import type { kompozeShimmerType } from '@/utils/utils.types'
 
 export interface SkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
-  type?: IShimmerType
+  type?: kompozeShimmerType
   borderRadius?: number
   height?: number
   width?: number

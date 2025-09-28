@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import type { SkeletonProps } from './Skeleton.types'
 import classes from './Skeleton.module.css'
 
-export const Skeleton: React.FC<SkeletonProps> = props => {
+export const Skeleton = forwardRef<HTMLDivElement, SkeletonProps>((props, ref) => {
   const {
     type = 'rectangle',
     width = 100,
@@ -15,6 +15,7 @@ export const Skeleton: React.FC<SkeletonProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={className}
       {...restProps}
     >
@@ -25,4 +26,4 @@ export const Skeleton: React.FC<SkeletonProps> = props => {
       }} />
     </div>
   )
-}
+})

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { HorizontalRunner } from './HorizontalRunner'
-import { Chip } from '../Chip'
+import { Chip } from '@/components/Chip'
 
 export const Simple: React.FC<{}> = () => {
   const [active, setActive] = useState('')

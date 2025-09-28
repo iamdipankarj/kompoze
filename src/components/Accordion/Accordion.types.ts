@@ -1,7 +1,7 @@
 import React from 'react'
-import type { OkElement } from '../../utils/utils.types'
+import type { KompozeElement } from '@/utils/utils.types'
 
-export interface AccordionProps extends React.HTMLAttributes<HTMLDivElement>, OkElement {
+export interface AccordionProps extends React.HTMLAttributes<HTMLDivElement>, KompozeElement {
   expanded?: boolean | null
   startIcon?: React.ReactNode | null
   endIcon?: React.ReactNode | null

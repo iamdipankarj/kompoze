@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { useState, useEffect } from 'react'
 import cx from 'classnames'
 import classes from './Snackbar.module.css'
 import type { SnackbarProps } from './Snackbar.types'
-import { useEventCallback } from '../../utils/hooks'
+import { useEventCallback } from '@/utils/hooks'
 
-export const Snackbar: React.FC<SnackbarProps> = props => {
+export const Snackbar = forwardRef<HTMLDivElement, SnackbarProps>((props, ref) => {
   const {
     autoHide = false,
     autoHideDuration = 6000,
@@ -39,6 +39,7 @@ export const Snackbar: React.FC<SnackbarProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       role='alert'
       {...restProps}
@@ -52,4 +53,4 @@ export const Snackbar: React.FC<SnackbarProps> = props => {
       ) : null}
     </div>
   )
-}
+})

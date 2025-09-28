@@ -1,7 +1,7 @@
 import React from 'react'
-import type { OkElement } from '../../utils/utils.types'
+import type { KompozeElement } from '@/utils/utils.types'
 
-export interface TextFieldProps extends React.HTMLAttributes<HTMLDivElement>, OkElement {
+export interface TextFieldProps extends React.HTMLAttributes<HTMLDivElement>, KompozeElement {
   error?: boolean
   type?: string
   name?: string

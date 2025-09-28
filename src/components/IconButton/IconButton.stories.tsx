@@ -2,8 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import type { Meta } from '@storybook/react-vite'
 import { IconButton } from './IconButton'
-import { InfoIcon } from '../Icon/InfoIcon'
-import { CheckBox } from '../CheckBox'
+import { CheckBox } from '@/components/CheckBox'
+import { InfoIcon } from '@/components/Icon'
 
 export const Medium: React.FC<{}> = args => {
   const [disabled, setDisabled] = useState(false)

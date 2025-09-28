@@ -1,7 +1,7 @@
 ---
 to: src/components/Icon/<%= name %>.tsx
 ---
-import React, { memo } from 'react'
+import React, { forwardRef, memo } from 'react'
 import { IconWrapper } from './IconWrapper'
 import { SVGIconProps } from './IconWrapper.types'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Snackbar } from './Snackbar'
-import { ShieldIcon } from '../Icon/ShieldIcon'
-import { Button } from '../Button'
+import { Button } from '@/components/Button'
+import { ShieldIcon } from '@/components/Icon'
 
 export const Simple: React.FC<{}> = () => {
   return (

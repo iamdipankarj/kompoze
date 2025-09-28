@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import type { TextAreaProps } from './TextArea.types'
 import classes from './TextArea.module.css'
 
-export const TextArea: React.FC<TextAreaProps> = props => {
+export const TextArea = forwardRef<HTMLDivElement, TextAreaProps>((props, ref) => {
   const {
     startAdornment = null,
     endAdornment = null,
@@ -22,6 +22,7 @@ export const TextArea: React.FC<TextAreaProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       {...restProps}
     >
@@ -72,4 +73,4 @@ export const TextArea: React.FC<TextAreaProps> = props => {
       ) : null}
     </div>
   )
-}
+})

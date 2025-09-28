@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://dipankarjana.com/" rel="noopener" target="_blank"><img width="100" src="https://dipankarjana.com/assets/profile-DKqoS43b.jpg" alt="Dipankar Jana"></a>
+  <a href="https://dipankarjana.com/" rel="noopener" target="_blank"></a>
 </p>
 <h1 align="center">Kompoze</h1>
 
@@ -8,14 +8,12 @@
 Dead simple [React](https://reactjs.org/) react component library to build faster and more accessible React applications.
 
 [![node version](https://img.shields.io/badge/node@latest-%3E=14.18.0-green)](https://badge.fury.io/js/npm)
-[![license](https://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/iamdipankarj/kompoze/blob/master/LICENSE)
-[![Wheelmap](https://img.shields.io/wheelmap/a/26699541)](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics)
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat)](#contributors-)
-[![PyPI status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://bitbucket.org/lbesson/ansi-colors)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iamdipankarj/kompoze/blob/master/LICENSE)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/iamdipankarj?style=social&label=Follow+@iamdipankarj)](https://twitter.com/iamdipankarj)
 
 </div>
+
+## 🚀 Features
 
 - Current Project branch: `master`
 - Build Tool: _Vite_ ([https://vite.dev/](https://vite.dev/))

@@ -1,8 +1,8 @@
 import React from 'react'
-import { SearchBar } from './SearchBar'
-import { HamburgerIcon } from '../Icon'
-import { IconButton } from '../IconButton'
-import { Avatar } from '../Avatar'
+import { Avatar } from '@/components/Avatar'
+import { HamburgerIcon } from '@/components/Icon'
+import { IconButton } from '@/components/IconButton'
+import { SearchBar } from '@/components/SearchBar'
 
 export const Simple: React.FC<{}> = () => {
   return (

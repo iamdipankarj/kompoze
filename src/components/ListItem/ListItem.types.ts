@@ -1,7 +1,7 @@
 import React from 'react'
-import type { OkElement } from '../../utils/utils.types'
+import type { KompozeElement } from '@/utils/utils.types'
 
-export interface ListItemProps extends React.HTMLAttributes<HTMLLIElement>, OkElement {
+export interface ListItemProps extends React.HTMLAttributes<HTMLLIElement>, KompozeElement {
   primary?: React.ReactNode
   secondary?: React.ReactNode
   icon?: React.ReactNode

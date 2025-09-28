@@ -1,6 +1,6 @@
-import type { OkElement } from '../../utils/utils.types'
+import type { KompozeElement } from '@/utils/utils.types'
 
-export interface TabHeaderProps extends React.HTMLAttributes<HTMLDivElement>, OkElement {
+export interface TabHeaderProps extends React.HTMLAttributes<HTMLDivElement>, KompozeElement {
   value?: number | 0,
   onChange: (event: React.SyntheticEvent, value?: any) => void
 }

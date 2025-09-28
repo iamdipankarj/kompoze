@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import classes from './SearchBar.module.css'
 import type { SearchBarProps } from './SearchBar.types'
 
-export const SearchBar: React.FC<SearchBarProps> = props => {
+export const SearchBar = forwardRef<HTMLDivElement, SearchBarProps>((props, ref) => {
   const {
     inputRef,
     placeholder = 'Search or Add...',
@@ -19,6 +19,7 @@ export const SearchBar: React.FC<SearchBarProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       {...restProps}
     >
@@ -35,4 +36,4 @@ export const SearchBar: React.FC<SearchBarProps> = props => {
       {endAdornment}
     </div>
   )
-}
+})

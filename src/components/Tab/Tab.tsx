@@ -4,7 +4,7 @@ import cx from 'classnames'
 import classes from './Tab.styles.module.css'
 import type { TabProps } from './Tab.types'
 
-export const Tab: React.FC<TabProps> = forwardRef<HTMLButtonElement, TabProps>((props, ref) => {
+export const Tab = forwardRef<HTMLButtonElement, TabProps>((props, ref) => {
   const {
     label,
     isActive = false,

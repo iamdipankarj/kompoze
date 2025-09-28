@@ -1,19 +1,19 @@
 import React from 'react'
-import type { ButtonAppearance, IColor, IElementSize, OkElement } from '../../utils/utils.types'
+import type { KompozeButtonAppearance, KompozeColor, KompozeElementSize, KompozeElement } from '@/utils/utils.types'
 
-export interface ButtonProps extends OkElement {
+export interface ButtonProps extends KompozeElement {
   /**
    * Size of the button
    */
-  size?: IElementSize
+  size?: KompozeElementSize
   /**
    * Filled, outilined or default
    */
-  variant?: ButtonAppearance
+  variant?: KompozeButtonAppearance
   /**
    * The color: Either from ThemeProvider or props
    */
-  color?: IColor
+  color?: KompozeColor
   /** Left Icon */
   startIcon?: React.ReactNode | null
   /** Right Icon */

@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { useRef, useState, useEffect } from 'react'
 import cx from 'classnames'
 import classes from './TransactionInput.module.css'
 import type { TransactionInputProps } from './TransactionInput.types'
 
-export const TransactionInput: React.FC<TransactionInputProps> = props => {
+export const TransactionInput = forwardRef<HTMLDivElement, TransactionInputProps>((props, ref) => {
   const inputEl = useRef<HTMLInputElement>(null)
   const {
     inputProps,
@@ -48,6 +48,7 @@ export const TransactionInput: React.FC<TransactionInputProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       onClick={onClickRoot}
       {...restProps}
@@ -85,4 +86,4 @@ export const TransactionInput: React.FC<TransactionInputProps> = props => {
       ) : null}
     </div>
   )
-}
+})

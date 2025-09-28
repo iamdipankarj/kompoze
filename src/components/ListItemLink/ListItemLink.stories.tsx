@@ -1,6 +1,6 @@
 import React from 'react'
-import { ListItemLink } from './ListItemLink'
-import { InfoIcon } from '../Icon'
+import { InfoIcon } from '@/components/Icon'
+import { ListItemLink } from '@/components/ListItemLink'
 
 export const Simple: React.FC<{}> = () => {
   return (

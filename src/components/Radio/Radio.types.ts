@@ -1,6 +1,6 @@
-import type { OkElement } from '../../utils/utils.types'
+import type { KompozeElement } from '@/utils/utils.types'
 
-export interface RadioProps extends React.HTMLAttributes<HTMLDivElement>, OkElement {
+export interface RadioProps extends React.HTMLAttributes<HTMLDivElement>, KompozeElement {
   id: string
   onChange?(e: React.ChangeEvent<HTMLInputElement>): void
   disabled?: boolean
