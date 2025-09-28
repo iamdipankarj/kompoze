@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as IconList from './index'
-import { TextField } from '../TextField'
 import classes from './Icon.stories.module.css'
+import { TextField } from '@/components/TextField'
 
 const getFilteredList = (icons: Array<any>, search: string) => {
   return icons.filter(name => name.toLowerCase().includes(search.toLowerCase()))

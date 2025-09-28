@@ -1,8 +1,8 @@
+import { Avatar } from '@/components/Avatar'
+import { DoneCircleIcon } from '@/components/Icon'
+import { ListItem } from '@/components/ListItem'
+import { ListView } from '@/components/ListView'
 import React from 'react'
-import { ListItem } from './ListItem'
-import { Avatar } from '../Avatar'
-import { ListView } from '../ListView'
-import { DoneCircleIcon } from '../Icon'
 
 export const Simple: React.FC<{}> = () => {
   return (

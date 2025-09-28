@@ -1,7 +1,7 @@
 import React from 'react'
-import type { OkElement } from '../../utils/utils.types'
+import type { KompozeElement } from '@/utils/utils.types'
 
-export interface SVGIconProps extends React.SVGProps<SVGSVGElement>, OkElement {
+export interface SVGIconProps extends React.SVGProps<SVGSVGElement>, KompozeElement {
   size?: number
   fill?: string
 }

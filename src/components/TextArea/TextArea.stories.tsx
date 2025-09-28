@@ -1,6 +1,6 @@
+import { InfoIcon } from '@/components/Icon'
+import { TextArea } from '@/components/TextArea'
 import React from 'react'
-import { InfoIcon } from '../Icon'
-import { TextArea } from './TextArea'
 
 export const WithError: React.FC<{}> = () => {
   return (

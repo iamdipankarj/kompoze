@@ -1,7 +1,7 @@
 import React from 'react'
 import cx from 'classnames'
-import type { AuxiliaryProps } from '../../utils/utils.types'
-import { capitalize } from '../../utils'
+import type { AuxiliaryProps } from '@/utils/utils.types'
+import { capitalize } from '@/utils'
 import type { IconButtonProps } from './IconButton.types'
 import classes from './IconButton.module.css'
 

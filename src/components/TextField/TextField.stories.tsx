@@ -1,7 +1,7 @@
+import { InfoIcon } from '@/components/Icon'
+import { TextField } from '@/components/TextField'
 import React from 'react'
 import { useState } from 'react'
-import { TextField } from './TextField'
-import { InfoIcon } from '../Icon'
 
 export const Simple: React.FC<{}> = () => {
   const [value, setValue] = useState('')

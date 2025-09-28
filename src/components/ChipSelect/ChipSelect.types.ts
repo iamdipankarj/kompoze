@@ -1,10 +1,10 @@
 import type { InputHTMLAttributes } from 'react'
-import type { IElementSize } from '../../utils/utils.types'
+import type { KompozeElementSize } from '@/utils/utils.types'
 
 export interface ChipSelectProps extends React.HTMLAttributes<HTMLDivElement> {
   onChange?(e: React.ChangeEvent<HTMLInputElement>): void
   id: string
-  area?: IElementSize
+  area?: KompozeElementSize
   label?: string
   disabled?: boolean
   checked?: boolean

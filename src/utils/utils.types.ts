@@ -1,16 +1,16 @@
-export interface OkElement {
+export interface KompozeElement {
   classList?: object
 }
 
-export type ITransitionType = 'fadeScale' | 'fade' | 'bottom' | 'right' | 'left' | 'center'
+export type KompozeTransitionType = 'fadeScale' | 'fade' | 'bottom' | 'right' | 'left' | 'center'
 
-export type IElementSize = 'small' | 'medium' | 'large'
+export type KompozeElementSize = 'small' | 'medium' | 'large'
 
-export type IColor = 'default' | 'primary' | 'secondary' | 'bahama' | 'grayscale'
+export type KompozeColor = 'default' | 'primary' | 'secondary' | 'bahama' | 'grayscale'
 
-export type ButtonAppearance = 'text' | 'filled' | 'outlined'
+export type KompozeButtonAppearance = 'text' | 'filled' | 'outlined'
 
-export type IShimmerType = 'rectangle' | 'circle'
+export type kompozeShimmerType = 'rectangle' | 'circle'
 
 export type ValueOf<T> = T[keyof T]
 

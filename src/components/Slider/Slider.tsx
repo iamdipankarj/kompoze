@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react'
 import cx from 'classnames'
 import type { SliderProps, ISliderData, UIDomEvent } from './Slider.types'
-import { IconButton } from '../IconButton'
-import { CaretLeftIcon, CaretRightIcon } from '../Icon'
 import classes from './Slider.module.css'
+import { IconButton } from '@/components/IconButton'
+import { CaretLeftIcon, CaretRightIcon } from '@/components/Icon'
 
 const SCROLL_OFFSET_TO_STOP_SCROLL = 30
 

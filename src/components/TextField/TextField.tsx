@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import cx from 'classnames'
-import { isValidValue } from '../../utils'
+import { isValidValue } from '@/utils'
 import classes from './TextField.module.css'
 import type { TextFieldProps } from './TextField.types'
 

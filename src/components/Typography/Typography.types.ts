@@ -1,4 +1,4 @@
-import type { OkElement, IColor } from '../../utils/utils.types'
+import type { KompozeElement, KompozeColor } from '@/utils/utils.types'
 
 export type Align = 'inherit' | 'left' | 'center' | 'right' | 'justify'
 
@@ -22,10 +22,10 @@ export type Variant =
   | 'overline'
   | 'inherit'
 
-export interface TypographyProps extends OkElement {
+export interface TypographyProps extends KompozeElement {
   variant: Variant
   align?: Align
-  color?: IColor
+  color?: KompozeColor
   gutterBottom?: boolean
   noWrap?: boolean
 }

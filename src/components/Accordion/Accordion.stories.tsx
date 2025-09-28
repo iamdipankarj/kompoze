@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import { Accordion } from './Accordion'
-import { InfoIcon, ProfileFilledIcon } from '../Icon'
-import { ListView } from '../ListView'
-import { ListItem } from '../ListItem'
+import { InfoIcon, ProfileFilledIcon } from '@/components/Icon'
+import { ListView } from '@/components/ListView'
+import { ListItem } from '@/components/ListItem'
 
 export const Uncontrolled: React.FC<{}> = () => {
   return (

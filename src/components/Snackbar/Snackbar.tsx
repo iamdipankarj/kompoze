@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import cx from 'classnames'
 import classes from './Snackbar.module.css'
 import type { SnackbarProps } from './Snackbar.types'
-import { useEventCallback } from '../../utils/hooks'
+import { useEventCallback } from '@/utils/hooks'
 
 export const Snackbar: React.FC<SnackbarProps> = props => {
   const {

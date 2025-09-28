@@ -1,8 +1,8 @@
-import type { ButtonAppearance, IColor, IElementSize, OkElement } from '../../utils/utils.types'
+import type { KompozeButtonAppearance, KompozeColor, KompozeElementSize, KompozeElement } from '@/utils/utils.types'
 
-export interface IconButtonProps extends OkElement {
-  size?: IElementSize
-  variant?: ButtonAppearance
-  color?: IColor
+export interface IconButtonProps extends KompozeElement {
+  size?: KompozeElementSize
+  variant?: KompozeButtonAppearance
+  color?: KompozeColor
   disabled?: boolean
 }
