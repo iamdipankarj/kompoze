@@ -41,7 +41,7 @@ yarn install kompoze
 
 ```
 git clone git@github.com:iamdipankarj/kompoze.git
-cd kompoze/
+cd kompoze
 yarn install
 ```
 
