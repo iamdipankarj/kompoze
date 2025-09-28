@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import type { SpinnerProps } from './Spinner.types'
 import classes from './Spinner.module.css'
@@ -8,7 +8,7 @@ import classes from './Spinner.module.css'
  *
  * See [a11y Specification](https://www.digitala11y.com/aria-busy-state/) for WAI-ARIA details
  */
-export const Spinner: React.FC<SpinnerProps> = props => {
+export const Spinner = forwardRef<HTMLSpanElement, SpinnerProps>((props, ref) => {
   const {
     size = 40,
     color = '#1c873b',
@@ -20,6 +20,7 @@ export const Spinner: React.FC<SpinnerProps> = props => {
 
   return (
     <span
+      ref={ref}
       className={cx(classes.root, className)}
       aria-busy='true'
       style={{
@@ -39,4 +40,4 @@ export const Spinner: React.FC<SpinnerProps> = props => {
       </svg>
     </span>
   )
-}
+})

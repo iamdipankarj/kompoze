@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { useEffect, useState, useCallback } from 'react'
 import type { TimerTextProps } from './TimerText.types'
 
@@ -22,7 +22,7 @@ const getTimeObject = (distance: number) => ({
   seconds: Math.floor((distance % (1000 * 60)) / 1000)
 })
 
-export const TimerText: React.FC<TimerTextProps> = props => {
+export const TimerText = forwardRef<HTMLSpanElement, TimerTextProps>((props, ref) => {
   const {
     format = 'mm:ss',
     className,
@@ -63,10 +63,11 @@ export const TimerText: React.FC<TimerTextProps> = props => {
 
   return (
     <span
+      ref={ref}
       className={className}
       {...restProps}
     >
       {deltaTime > 0 ? result : defaultState[format as any]}
     </span>
   )
-}
+})

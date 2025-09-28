@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { useRef, useState, useEffect } from 'react'
 import cx from 'classnames'
 import classes from './HorizontalRunner.module.css'
@@ -6,14 +6,16 @@ import type { HorizontalRunnerProps } from './HorizontalRunner.types'
 import { IconButton } from '@/components/IconButton'
 import { CaretLeftIcon, CaretRightIcon } from '@/components/Icon'
 
-export const HorizontalRunner: React.FC<HorizontalRunnerProps> = ({
-  children,
-  className,
-  speed = 25,
-  distance = 100,
-  step = 10,
-  ...restProps
-}) => {
+export const HorizontalRunner = forwardRef<HTMLDivElement, HorizontalRunnerProps>((props, ref) => {
+  const {
+    children,
+    className,
+    speed = 25,
+    distance = 100,
+    step = 10,
+    ...restProps
+  } = props
+
   const contentWrapper = useRef<any>(null)
   const [scrollButtonState, setScrollButtonState] = useState({ left: false, right: false })
 
@@ -44,7 +46,7 @@ export const HorizontalRunner: React.FC<HorizontalRunnerProps> = ({
   }, [])
 
   return (
-    <div className={cx(classes.root, className)} {...restProps}>
+    <div ref={ref} className={cx(classes.root, className)} {...restProps}>
       <IconButton
         tabIndex={0}
         className={classes.iconContainer}
@@ -71,4 +73,4 @@ export const HorizontalRunner: React.FC<HorizontalRunnerProps> = ({
       </IconButton>
     </div>
   )
-}
+})

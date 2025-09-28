@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import type { AlertProps } from './Alert.types'
 import classes from './Alert.module.css'
 import { InfoIcon } from '@/components/Icon'
 
-export const Alert: React.FC<AlertProps> = (props: AlertProps) => {
+export const Alert = forwardRef<HTMLDivElement, AlertProps>((props, ref) => {
   const {
     variant = 'success',
     children,
@@ -14,6 +14,7 @@ export const Alert: React.FC<AlertProps> = (props: AlertProps) => {
 
   return (
     <div
+      ref={ref}
       className={cx(
         classes.root,
         {
@@ -29,4 +30,4 @@ export const Alert: React.FC<AlertProps> = (props: AlertProps) => {
       <span>{children}</span>
     </div>
   )
-}
+})

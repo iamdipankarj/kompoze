@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import type { ProgressProps } from './Progress.types'
 import classes from './Progress.module.css'
 
-export const Progress: React.FC<ProgressProps> = props => {
+export const Progress = forwardRef<HTMLDivElement, ProgressProps>((props, ref) => {
   const {
     className,
     variant = 'infinite',
@@ -29,6 +29,7 @@ export const Progress: React.FC<ProgressProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       style={{ height }}
       {...restProps}
@@ -44,4 +45,4 @@ export const Progress: React.FC<ProgressProps> = props => {
       ) : null}
     </div>
   )
-}
+})

@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import type { AvatarProps } from './Avatar.types'
 import classes from './Avatar.module.css'
 
-export const Avatar: React.FC<AvatarProps> = ({
-  src,
-  alt,
-  size = 32,
-  className,
-  children,
-  ...restProps
-}: AvatarProps = {}) => {
+export const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
+  const {
+    src,
+    alt,
+    size = 32,
+    className,
+    children,
+    ...restProps
+  } = props
+
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       style={{
         width: size,
@@ -31,4 +34,4 @@ export const Avatar: React.FC<AvatarProps> = ({
       ) : alt || children}
     </div>
   )
-}
+})

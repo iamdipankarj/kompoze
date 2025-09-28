@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { memo, useState, useCallback } from 'react'
 import cx from 'classnames'
 import { SingleInput } from './SingleInput'
 import type { OTPInputProps } from './OtpInput.types'
 import classes from './OtpInput.module.css'
 
-export const OtpInput: React.FC<OTPInputProps> = memo<OTPInputProps>(props => {
+export const OtpInput = forwardRef<HTMLDivElement, OTPInputProps>((props, ref) => {
   const {
     className,
     length,
@@ -160,7 +160,7 @@ export const OtpInput: React.FC<OTPInputProps> = memo<OTPInputProps>(props => {
   )
 
   return (
-    <div {...rest} className={cx(classes.root, className)}>
+    <div ref={ref} className={cx(classes.root, className)} {...rest}>
       {Array(length)
         .fill('')
         .map((_, index) => {

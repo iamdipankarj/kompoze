@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import type { SwitchProps } from './Switch.types'
 import classes from './Switch.module.css'
 
-export const Switch: React.FC<SwitchProps> = props => {
+export const Switch = forwardRef<HTMLDivElement, SwitchProps>((props, ref) => {
   const {
     id,
     inputProps,
@@ -18,6 +18,7 @@ export const Switch: React.FC<SwitchProps> = props => {
   } = props
   return (
     <div
+      ref={ref}
       className={cx(
         classes.root,
         className
@@ -46,4 +47,4 @@ export const Switch: React.FC<SwitchProps> = props => {
       </label>
     </div>
   )
-}
+})

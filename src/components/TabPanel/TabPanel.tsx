@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import classes from './TabPanel.module.css'
 import type { TabPanelProps } from './TabPanel.types'
 
-export const TabPanel: React.FC<TabPanelProps> = props => {
+export const TabPanel = forwardRef<HTMLDivElement, TabPanelProps>((props, ref) => {
   const {
     children,
     className,
@@ -12,6 +12,7 @@ export const TabPanel: React.FC<TabPanelProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       role='tabpanel'
       {...restProps}
@@ -19,4 +20,4 @@ export const TabPanel: React.FC<TabPanelProps> = props => {
       {children}
     </div>
   )
-}
+})

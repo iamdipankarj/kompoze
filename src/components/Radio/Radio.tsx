@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import classes from './Radio.module.css'
 import type { RadioProps } from './Radio.types'
 
-export const Radio: React.FC<RadioProps> = props => {
+export const Radio = forwardRef<HTMLDivElement, RadioProps>((props, ref) => {
   const {
     id,
     inputProps,
@@ -23,6 +23,7 @@ export const Radio: React.FC<RadioProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       {...restProps}
     >
@@ -49,4 +50,4 @@ export const Radio: React.FC<RadioProps> = props => {
       </label>
     </div>
   )
-}
+})

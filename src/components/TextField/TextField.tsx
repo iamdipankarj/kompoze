@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { useState, useRef, useEffect } from 'react'
 import cx from 'classnames'
 import { isValidValue } from '@/utils'
 import classes from './TextField.module.css'
 import type { TextFieldProps } from './TextField.types'
 
-export const TextField: React.FC<TextFieldProps> = props => {
+export const TextField = forwardRef<HTMLDivElement, TextFieldProps>((props, ref) => {
   const {
     startAdornment = null,
     endAdornment = null,
@@ -39,6 +39,7 @@ export const TextField: React.FC<TextFieldProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       {...restProps}
     >
@@ -111,4 +112,4 @@ export const TextField: React.FC<TextFieldProps> = props => {
       )}
     </div>
   )
-}
+})

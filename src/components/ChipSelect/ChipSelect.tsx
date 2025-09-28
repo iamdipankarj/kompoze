@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 import type { ChipSelectProps } from './ChipSelect.types'
 import classes from './ChipSelect.module.css'
@@ -8,7 +8,7 @@ import { themeColors } from '@/theme'
 /**
  * A custom component that renders the `<input />` HTML Element with customized styles for chips.
  */
-export const ChipSelect: React.FC<ChipSelectProps> = props => {
+export const ChipSelect = forwardRef<HTMLDivElement, ChipSelectProps>((props, ref) => {
   const {
     id,
     inputProps,
@@ -26,6 +26,7 @@ export const ChipSelect: React.FC<ChipSelectProps> = props => {
 
   return (
     <div
+      ref={ref}
       className={cx(classes.root, className)}
       {...restProps}
     >
@@ -51,4 +52,4 @@ export const ChipSelect: React.FC<ChipSelectProps> = props => {
       </label>
     </div>
   )
-}
+})

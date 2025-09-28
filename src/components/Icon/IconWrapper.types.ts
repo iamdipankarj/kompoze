@@ -5,3 +5,5 @@ export interface SVGIconProps extends React.SVGProps<SVGSVGElement>, KompozeElem
   size?: number
   fill?: string
 }
+
+export type IconComponentProps = Omit<SVGIconProps, 'ref'>
