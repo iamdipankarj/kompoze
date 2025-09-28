@@ -35,21 +35,21 @@ jobs:
         id: major
         if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'release') && startsWith(github.base_ref, 'master') && github.event.pull_request.merged == true
         run: |
-          echo "::set-output name=versionType::major"
+          echo "versionType=major" >> $GITHUB_OUTPUT
 
       # Minor
       - name: Version setup - Minor
         id: minor
         if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'feature') && startsWith(github.base_ref, 'master') && github.event.pull_request.merged == true
         run: |
-          echo "::set-output name=versionType::minor"
+          echo "versionType=minor" >> $GITHUB_OUTPUT
 
       # Patch
       - name: Version setup - Patch
         id: patch
         if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'hotfix') && startsWith(github.base_ref, 'master') && github.event.pull_request.merged == true
         run: |
-          echo "::set-output name=versionType::patch"
+          echo "versionType=patch" >> $GITHUB_OUTPUT
 
   publish:
     name: Publish Library
@@ -70,6 +70,11 @@ jobs:
         with:
           path: ~/.npm
           key: ${{ runner.os }}-npm-cache
+
+      - name: Set git config
+        run: |
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "Kompoze Auto Versioning"
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
