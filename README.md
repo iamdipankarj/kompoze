@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://dipankarjana.com/" rel="noopener" target="_blank"></a>
 </p>
-<h1 align="center">Kompoze React Library</h1>
+<h1 align="center">My awesome Library</h1>
 
 <div align="center">
 
